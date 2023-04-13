@@ -1,0 +1,87 @@
+.container {
+    min-height: 80vh;
+    margin: 5% 8%;
+    display: grid;
+    grid-template-rows: repeat(6,150px);
+    /* justify-items: center; */
+    align-items: center;
+}
+.container img {
+    width: 120px;
+}
+.html img {
+    float: left;
+    width: 120px;
+}
+.html p {
+    height: 70px;
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+.html {
+    justify-items: center;
+    align-items: center;
+}
+.react img {
+    float: right;
+}
+.react p {
+    text-align: right;
+    display: table-cell;
+    height: 50px;
+    vertical-align: middle;
+    float: right;
+}
+/* .container img:nth-child(3) {
+    width: 120px;
+    float: left;
+    margin-top: 50px;
+} */
+/* .container p:nth-child(4) {
+    align-items: center;
+    justify-items: center;
+    stroke: none;
+    text-shadow: none;
+    margin-left: 150px;
+    line-height: 200px;
+} */
+/* .container img:nth-child(5) {
+    width: 120px;
+    float: right;
+    margin-top: 50px;
+    
+} */
+/* .container p:nth-child(6) {
+    float: right;
+    line-height: 150px;
+} */
+/* .container img:nth-child(7) {
+    width: 120px;
+    float: left;
+    margin-top: 100px;
+} */
+/* .container p:nth-child(8) {
+    line-height: 150px;
+    margin-top: 100px;
+} */
+/* .mui {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+} */
+/* .mui img {
+    width: 130px;
+} */
+.mui p {
+
+}
+/* .container img:nth-child(9) {
+    width: 130px;
+
+}
+.container p:nth-child(10) {
+    
+} */

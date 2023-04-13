@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* margin-top: 150px; */
+    /* position: absolute; */
+    min-height: 80vh;
+    margin-top: 0;
+}
+.basket {
+    width: 80%;
+    margin: 35px 25px;
+
+}
+.res1024 {
+    list-style: none;
+    display: flex;
+    background-color:silver ;
+    border-radius: 8px;
+    justify-content: space-evenly;
+    padding: 10px;
+    border: left 1px black;
+    margin-bottom: 10px;
+}
+.items {
+    gap: 10px;
+    
+}
+.total {
+    background-color: silver;
+    border-radius: 8px;
+    height: auto;
+    padding: 28px 15px;
+    margin-right:20px;
+     
+}
+.total a {
+    text-decoration: none;
+    color: green;
+
+}
+.total button {
+    /* width: 26px; */
+    /* height: 26px; */
+    margin: 3px;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    background-color: #0014ff;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    /* padding: 4px; */
+}
+.total div p span {
+    color: #2baf46;
+    font-size: larger;
+    font-weight: 600;
+    padding-left: 10px;
+}
+@media (min-width:651px) {
+    .res600 {
+        display: none;
+    }
+}
+@media (max-width:650px) {
+    .container {
+        flex-direction: column;
+    }
+    .res1024 {
+        display: none;
+    }
+    .total {
+        margin:30px;
+    }
+}

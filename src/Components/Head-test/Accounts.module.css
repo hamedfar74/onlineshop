@@ -1,0 +1,45 @@
+.container {
+    right: 30px;
+    display: flex;
+    padding: 10px;
+}
+.basket {
+    margin: 0 8px;
+    background-color: #b9b9b9;
+    height: 35px;
+    width: 35px;
+    /* justify-items: center;
+    align-items: center; */
+    border-radius: 50%;
+    cursor: pointer;
+}
+.basket img {
+    justify-items: center;
+    align-items: center;
+    /* height: 35px; */
+    width: 35px;
+    color: green;
+}
+.Accounts {
+    margin: 0 8px;
+
+    background-color: #b9b9b9;
+    height: 35px;
+    width: 35px;
+    /* justify-items: center;
+    align-items: center; */
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.Accounts img {
+    justify-items: center;
+    align-items: center;
+    /* height: 35px; */
+    width: 35px;
+}
+@media (max-width:426px) {
+    .basket{
+        display: none;
+    }
+}

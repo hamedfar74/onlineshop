@@ -1,0 +1,25 @@
+
+.burger {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    z-index: 20;
+    display: none;
+    cursor: pointer;
+}
+.burger div {
+    width: 2rem;
+    height: .25rem;
+    border-radius: 12px;
+    transform-origin: 1px;
+    transition: all 0.4s linear;
+}
+@media (max-width: 768px) {
+    .burger{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+  }

@@ -1,0 +1,37 @@
+.container {
+    background-color: #F0FF42;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    place-items: center;
+    top:0;
+    left:0;
+    height: 10vh;
+    width: 100%;
+    z-index: 5;
+    position: sticky;
+}
+.logocontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.logocontainer a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    width: 40px;
+    
+}
+@media (max-width:768px) {
+    .container{
+        height: 17vh;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}

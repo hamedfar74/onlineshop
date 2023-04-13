@@ -1,0 +1,48 @@
+<!-- HTML code for a round button -->
+<button class="ripple">Click me</button>
+
+<!-- CSS code for a round button with a ripple effect -->
+<style>
+  .ripple {
+    position: relative; /* sets the position of the button parent container to relative */
+    overflow: hidden; /* hides the overflow content */
+    border-radius: 50%; /* makes the button round */
+    padding: 16px 32px; /* adds some padding to the button */
+    background-color: #4CAF50; /* sets the default background color of the button */
+    color: white; /* sets the text color of the button */
+    border: none; /* removes the border from the button */
+    cursor: pointer; /* changes the cursor to a pointing hand when hovering over the button */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* adds a shadow effect to the button */
+    transition: transform 0.2s ease-in-out; /* adds a smooth transition effect to the button */
+  }
+
+  .ripple:after {
+    content: ""; /* creates an empty pseudo-element */
+    position: absolute; /* sets the position of the pseudo-element to absolute */
+    top: 50%; /* sets the top position of the pseudo-element to 50% */
+    left: 50%; /* sets the left position of the pseudo-element to 50% */
+    transform: translate(-50%, -50%) scale(0); /* hides the pseudo-element until it is scaled up */
+    border-radius: 50%; /* makes the pseudo-element round */
+    width: 500px; /* sets the width of the pseudo-element */
+    height: 500px; /* sets the height of the pseudo-element */
+    background-color: rgba(255, 255, 255, 0.5); /* sets the color of the pseudo-element */
+    pointer-events: none; /* allows the button click to pass through the pseudo-element */
+    animation: ripple 1s ease-out; /* defines the ripple effect animation */
+  }
+
+  @keyframes ripple {
+    to {
+      transform: translate(-50%, -50%) scale(3); /* scales up the pseudo-element to create a ripple effect */
+      opacity: 0; /* fades out the pseudo-element as it scales up */
+    }
+  }
+
+  .ripple:hover {
+    transform: scale(1.05); /* scales up the button size on hover */
+  }
+
+  .ripple:active:after {
+    transform: translate(-50%, -50%) scale(1); /* scales up the pseudo-element when the button is clicked */
+    opacity: 0.8; /* sets the opacity of the pseudo-element when it is scaled up */
+  }
+</style>
