@@ -89,7 +89,7 @@ p:nth-child(3) {
   color: #2baf46;
   
 }
-p:nth-child(4) {
+/* div:nth-child(4) {
   text-shadow: -1px 0 lightslategrey, 0 1px lightslategrey, 1px 0 lightslategrey, 0 -1px lightslategrey;
 
-}
+} */

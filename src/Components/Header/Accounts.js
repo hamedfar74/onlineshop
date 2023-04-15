@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import styles from "./Accounts.module.css";
+import styles from "../../styles/header/Accounts.module.css";
 import personIcon from "../../icons/person.svg";
 import shoppingcartIcon from "../../icons/shoppingcart.svg"
 import { Link } from "react-router-dom";

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { clear, checkout } from "../redux/basket/basketAction";
 import Basket from "./Basket";
 
-import styles from "./shopBasket.module.css";
+import styles from "../styles/ShopBasket.module.css";
 
 const ShopBasket = () => {
   const dispatch = useDispatch();

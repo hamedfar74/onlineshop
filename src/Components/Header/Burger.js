@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import List from './List'
 
-import styles from "./Burger.module.css"
+import styles from "../../styles/header/Burger.module.css"
 // import styled from 'styled-components'
 
 /////////

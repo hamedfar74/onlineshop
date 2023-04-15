@@ -3,7 +3,7 @@ import { shorten } from "../helper/function";
 import { useDispatch } from "react-redux";
 import { removeItem, increase, decrease } from "../redux/basket/basketAction";
 import trashIcon from "../icons/trash.svg";
-import styles from "./basket.module.css";
+import styles from "../styles/Basket.module.css";
 // import Button from '@mui/material/Button';
 
 

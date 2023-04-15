@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "./Aboutus.module.css"
+import styles from "../styles/Aboutus.module.css"
 import htmlcss from "../images/javascript-39396.png"
 import react from "../images/react.png"
 import redux from "../images/redux.png"
@@ -13,6 +13,7 @@ const Aboutus = () => {
         <h1>Hello Dear Visitor</h1>
         <p>
           I'm <span>Hamed Foroughi</span> and a Junior Front-End developer . 
+          this is an online-shop with login and signup form.
           I know thats not so great but let's see what technologies this project is build with
         </p> 
       </div>

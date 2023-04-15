@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { validate } from "./validate";
-import styles from "./Signup.module.css";
+import styles from "../styles/Signup.module.css";
 import { Link } from "react-router-dom";
 
 const Signup = () => {

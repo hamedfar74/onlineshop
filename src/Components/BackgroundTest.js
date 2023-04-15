@@ -1,14 +1,16 @@
 import React from 'react'
+import styles from "../styles/backgroundtest.module.css"
+
 
 const BackgroundTest = () => {
   return (
     <div>
         
 
-<div class="header">
+<div className={styles.header}>
 
 
-<div class="inner-header flex">
+<div className={`${styles.inner-header} ${styles.flex} `}>
 
 <svg version="1.1" class="logo" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
@@ -29,7 +31,7 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 <defs>
 <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
 </defs>
-<g class="parallax">
+<g className={styles.parallax}>
 <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
 <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
 <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
@@ -43,8 +45,8 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 
 
 
-<div class="content flex">
-  <p>By.Goodkatz | Free to use </p>
+<div className={`${styles.content} ${styles.flex} `} >
+  <p>By.Goodkatz |  Free to use </p>
 </div>
 
 

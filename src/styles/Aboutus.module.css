@@ -12,6 +12,7 @@
 .html img {
     float: left;
     width: 120px;
+    margin-right: 20px;
 }
 .html p {
     height: 70px;
@@ -27,6 +28,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+.react img {
+    margin-right: 20px;
+}
+.redux img {
+    margin-right: 10px;
 }
 .redux {
     display: flex;

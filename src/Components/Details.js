@@ -11,7 +11,7 @@ import {
 import { quantityCount, isInCart } from "../helper/function";
 import trashIcon from "../icons/trash.svg";
 
-import styles from "./Details.module.css";
+import styles from "../styles/Details.module.css";
 
 
 ////////MUI

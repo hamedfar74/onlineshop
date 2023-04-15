@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getData } from "../redux/data/dataAction";
 import Card from "./Card";
-import styles from "./shop.module.css"
+import styles from "../styles/Shop.module.css"
 
 
 
