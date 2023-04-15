@@ -28,7 +28,11 @@ const Footer = () => {
             <div className={styles.links}>
                 <ul>
                     <li>report problem</li>
-                    <li>github</li>
+                    <li>
+                        <a href="https://github.com/hamedfar74/onlineshop" >
+                        github
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div className={styles.search}>

@@ -4,12 +4,13 @@ import htmlcss from "../images/javascript-39396.png"
 import react from "../images/react.png"
 import redux from "../images/redux.png"
 import mui from "../images/MUI.png"
+import comp from "../images/styled-components.svg"
 
 const Aboutus = () => {
   return (
     <div className={styles.container}>
       <div>
-        <h1>Hello Darling</h1>
+        <h1>Hello Dear Visitor</h1>
         <p>
           I'm <span>Hamed Foroughi</span> and a Junior Front-End developer . 
           I know thats not so great but let's see what technologies this project is build with
@@ -30,6 +31,10 @@ const Aboutus = () => {
       <div className={styles.mui} >
         <img src={mui} alt="materialUI" />
         <p>And finally i used Styled-Components and take a little help from MUI</p>
+      </div>
+      <div className={styles.comp}>
+        <img src={comp} alt='styled-components' />
+        <p>in the middle of way styled-components helped me to build hamburger menu</p>
       </div>
     </div>
   )

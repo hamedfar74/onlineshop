@@ -23,16 +23,38 @@
     justify-items: center;
     align-items: center;
 }
-.react img {
-    float: right;
+.react {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
-.react p {
+.redux {
+    display: flex;
+    align-items: center;
+}
+.mui {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.comp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* .react img {
+    float: right;
+} */
+/* .react p {
     text-align: right;
     display: table-cell;
     height: 50px;
     vertical-align: middle;
     float: right;
-}
+} */
 /* .container img:nth-child(3) {
     width: 120px;
     float: left;
@@ -75,9 +97,6 @@
 /* .mui img {
     width: 130px;
 } */
-.mui p {
-
-}
 /* .container img:nth-child(9) {
     width: 130px;
 
