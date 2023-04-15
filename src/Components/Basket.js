@@ -8,7 +8,7 @@ import styles from "../styles/Basket.module.css";
 
 
 const Basket = ({ data }) => {
-  console.log(data);
+  
   const dispatch = useDispatch();
 
   return (

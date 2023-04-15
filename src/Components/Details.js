@@ -32,7 +32,7 @@ const Details = () => {
   const { data, loading, error } = useSelector((state) => state.product);
 
   const state = useSelector((state) => state.basket);
-  console.log(state);
+  
 
   useEffect(() => {
     dispatch(getProduct(id));

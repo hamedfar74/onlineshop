@@ -9,7 +9,7 @@ import styles from "../styles/ShopBasket.module.css";
 const ShopBasket = () => {
   const dispatch = useDispatch();
   const state = useSelector((state) => state.basket);
-  console.log(state);
+  
   return (
     <div className={styles.container}>
       <div className={styles.basket}>
