@@ -11,7 +11,7 @@ const NavbarTest = () => {
       <AppBar >
         <Container maxWidth="lg">
           <Grid container>
-            <Grid item xs={5}>
+            <Grid item xs={4}>
               <Burger />
             </Grid>
             <Grid item xs={4}>
@@ -20,7 +20,7 @@ const NavbarTest = () => {
                 <span>DH SHOP</span>
               </div>
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={4}>
               <Accounts />
             </Grid>
           </Grid>

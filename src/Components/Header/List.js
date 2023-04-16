@@ -23,7 +23,7 @@ const UlList = styled.ul`
         flex-wrap:nowrap;
         flex-shrink: 1;
         /* left:25px; */
-        margin: 10px 18px 10px 0;
+        margin: 10px 16px 10px 0;
         color: ${(props) => props.open ? "white" : "black"};
         &:hover {
             font-size: 19px;

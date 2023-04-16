@@ -22,13 +22,14 @@ const Shop = () => {
       {loading ? (
         <h2>LOADING ...</h2>
       ) : (
-        data.map((item) =>
-          <Container maxWidth="lg">
-
-            <Card data={item} key={item.id} />
-          </Container>
-          
-      ))}
+        <Container maxWidth="lg">
+          <Grid container>
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+            {data.map((item) => <Card data={item} key={item.id} />)}
+            </Grid>
+          </Grid>
+        </Container>
+      )}
       {error ? <h2>Somthing Went Wrong!! try again</h2> : ""}
     </div>
   );

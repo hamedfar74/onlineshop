@@ -13,7 +13,7 @@ const Card = ({ data }) => {
   const navigate = useNavigate();
 
   return (
-    <div className={styles.container}>
+    <div >
       <img src={data.image} alt="product" />
       <h3> {shorten(data.title)} </h3>
       <p>{data.price} $</p>
