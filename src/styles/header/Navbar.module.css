@@ -9,6 +9,7 @@
     width: 100%;
     z-index: 5;
     position: sticky;
+    
 }
 .logocontainer {
     display: flex;

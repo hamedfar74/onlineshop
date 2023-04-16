@@ -5,9 +5,11 @@ import styles from "../../styles/header/Navbar.module.css"
 import logo from "../../icons/deathly-larg.png"
 import { Link } from 'react-router-dom'
 
+
 const Navbar = () => {
   return (
     <div className={styles.container}>
+      
         <Burger />
         <div className={styles.logocontainer}>
           <Link to="/">

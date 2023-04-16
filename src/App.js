@@ -11,12 +11,14 @@ import ShopBasket from "./Components/ShopBasket";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Header/Navbar";
 import Profile from "./Components/Profile";
+import NavbarTest from "./Components/Header/NavbarTest";
 
 function App() {
   return (
     <div  style={{}}>
       
-      <Navbar />
+      {/* <Navbar /> */}
+      <NavbarTest />
       
       <Routes>
         <Route path="/" element={<Home />} />

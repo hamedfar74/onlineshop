@@ -2,6 +2,7 @@
     right: 30px;
     display: flex;
     padding: 10px;
+    justify-content: flex-end;
 }
 .basket {
     margin: 0 8px;

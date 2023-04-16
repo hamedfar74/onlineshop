@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { getData } from "../redux/data/dataAction";
 import Card from "./Card";
 import styles from "../styles/Shop.module.css"
+import { Box, Container, Grid } from "@mui/material";
 
 
 
@@ -21,8 +22,13 @@ const Shop = () => {
       {loading ? (
         <h2>LOADING ...</h2>
       ) : (
-        data.map((item) => <Card data={item} key={item.id} />)
-      )}
+        data.map((item) =>
+          <Container maxWidth="lg">
+
+            <Card data={item} key={item.id} />
+          </Container>
+          
+      ))}
       {error ? <h2>Somthing Went Wrong!! try again</h2> : ""}
     </div>
   );
