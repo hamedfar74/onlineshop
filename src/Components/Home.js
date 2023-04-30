@@ -2,9 +2,11 @@ import React from 'react'
 import styles from"../styles/Home.module.css"
 import banner from '../images/banner.png'
 import { Link } from 'react-router-dom'
+import Loader from './Loader'
 
 
 const Home = () => {
+  // if (loading) return <Loader />;
   // const navigate = useNavigate();
   return (
     <div className={styles.container}>

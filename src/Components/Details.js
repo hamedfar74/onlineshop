@@ -17,13 +17,12 @@ import styles from "../styles/Details.module.css";
 ////////MUI
 import Rating from "@mui/material/Rating";
 import Stack from "@mui/material/Stack";
-import { Button } from "@mui/material";
+import { Button , Container , Grid, CardMedia, Typography} from "@mui/material";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import AddIcon from '@mui/icons-material/Add';
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
-// import { IconButton } from '@mui/material';
+import Loader from "./Loader";
 
-// const useStyles = makeStyles((theme) => ({startIcon : { margin:0}}));
 
 
 const Details = () => {
@@ -32,18 +31,17 @@ const Details = () => {
   const { data, loading, error } = useSelector((state) => state.product);
 
   const state = useSelector((state) => state.basket);
-  
+  console.log(data)
 
   useEffect(() => {
     dispatch(getProduct(id));
   }, []);
   // const classes = useStyles();
-
+  if (loading) return <Loader />;
   return (
+    
     <div className={styles.container}>
-      {loading ? (
-        <h3>Loading...</h3>
-      ) : data ? (
+      { data ? (
         <div className={styles.second}>
           <img src={data.image} alt="product" />
           <div className={styles.info}>
@@ -70,21 +68,23 @@ const Details = () => {
                 </Button>
               )}
               {quantityCount(state, data.id) > 1 && (
-                <Button variant="contained" startIcon={<HorizontalRuleIcon />} onClick={() => dispatch(decrease(data))}></Button>
+                <Button variant="contained" startIcon={<HorizontalRuleIcon />} className={styles.center} onClick={() => dispatch(decrease(data))}></Button>
               )}
               {quantityCount(state, data.id) > 0 && (
-                <div className={styles.span} >  <span> {quantityCount(state, data.id)} </span> </div>
+              <div className={styles.span} >  
+                <span> {quantityCount(state, data.id)} </span>
+              </div>
               )}
-              {isInCart(state, data.id) ? (
               
-
-                <Button variant="contained" startIcon={<AddIcon/>} edge="start"  onClick={() => dispatch(increase(data))}></Button>
+              {isInCart(state, data.id) ? (
+                <Button variant="contained" sx={{width:30,height:64,margin:0}}  className={styles.center} startIcon={<AddIcon/>}  onClick={() => dispatch(increase(data))}></Button>
                 
               ) : (
                 <Button variant="contained" endIcon={<AddShoppingCartIcon />}  onClick={() => dispatch(addItem(data))}>
                   Add to Basket
                 </Button>
               )}
+              
             </div>
           </div>
         </div>

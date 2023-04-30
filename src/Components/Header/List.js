@@ -24,7 +24,7 @@ const UlList = styled.ul`
         flex-shrink: 1;
         /* left:25px; */
         margin: 10px 16px 10px 0;
-        color: ${(props) => props.open ? "white" : "black"};
+        color: ${(props) => props.open ? "white" : "#FF94CC"};
         &:hover {
             font-size: 19px;
             font-weight: 400;

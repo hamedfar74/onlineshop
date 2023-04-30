@@ -1,23 +1,20 @@
 .container {
-    /* margin: 3% 10%; */
     min-height: 70vh;
-    /* position: absolute; */
-    /* padding: auto; */
-    /* height: auto; */
-    /* width: 100%; */
     justify-content: center;
     align-items: center;
-    /* float: left; */
-    margin: 5%;
+    width: 90%;
+    margin: 10% 7%;
+    /* max-width: 1200px; */
 }
 .second {
     display: flex;
 }
-
+.center span {
+    margin:0;
+}
 
 .second img {
     height: 50vh;
-    /* width: 100%; */
 }
 
 .info {
@@ -39,9 +36,7 @@
 
 .button {
     display: flex;
-    /* width: 30px;
-    height: 30px; */
-    /* padding: 3px; */
+    height: 64px;
 }
 .button IconButton {
     background-color: #1976d2;

@@ -14,10 +14,10 @@ const DropDown = styled.ul`
     width: 100px;
     transition: all 0.4s linear;
     transform: ${(props) => props.open ? "translateY(0)" : "translateY(-200%)" } ;
-    
+    border-radius:10px;
     a {
         text-decoration: none;
-        color: green;
+        color: #511281;
         
     }
     li {

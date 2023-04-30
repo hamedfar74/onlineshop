@@ -12,6 +12,9 @@ import Footer from "./Components/Footer";
 import Navbar from "./Components/Header/Navbar";
 import Profile from "./Components/Profile";
 import NavbarTest from "./Components/Header/NavbarTest";
+import ScrollToTop from "./Components/ScrollToTop";
+import Info from "./Components/Info";
+
 
 function App() {
   return (
@@ -19,11 +22,11 @@ function App() {
       
       {/* <Navbar /> */}
       <NavbarTest />
-      
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
-        <Route path="/shop/:id" element={<Details />} />
+        <Route path="/shop/:id" element={<Info />} />
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/contactus" element={<Contactus />} />
         <Route path="/profile" element={<Profile />} />
