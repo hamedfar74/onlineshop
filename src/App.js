@@ -6,7 +6,6 @@ import Signup from "./Components/Signup";
 import { Route, Routes } from "react-router-dom";
 import Aboutus from "./Components/Aboutus";
 import Contactus from "./Components/Contactus";
-import Details from "./Components/Details"
 import ShopBasket from "./Components/ShopBasket";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Header/Navbar";
@@ -14,6 +13,7 @@ import Profile from "./Components/Profile";
 import NavbarTest from "./Components/Header/NavbarTest";
 import ScrollToTop from "./Components/ScrollToTop";
 import Info from "./Components/Info";
+import BackgroundTest from "./Components/BackgroundTest";
 
 
 function App() {
@@ -30,8 +30,16 @@ function App() {
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/contactus" element={<Contactus />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/profile/login" element={<Login />} />
-        <Route path="/profile/signup" element={<Signup />} />
+        <Route path="/profile/login" element={
+          <BackgroundTest>
+            <Login />
+          </BackgroundTest>
+        } />
+        <Route path="/profile/signup" element={
+        <BackgroundTest>
+          <Signup />
+        </BackgroundTest>
+        } />
         <Route path="/basket" element={<ShopBasket />} />
         <Route path="/*" element={<Home />} />
       </Routes>

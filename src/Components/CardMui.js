@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "../styles/Card.module.css";
 import { useNavigate } from "react-router-dom";
 import { shorten } from "../helper/function";
 
@@ -14,11 +13,12 @@ const CardMui = ({ data }) => {
   const navigate = useNavigate();
 
   return (
-    <Card sx={{ maxWidth: 345 , borderRadius: 4 , boxShadow: "rgba(0,0,0,0.1) 0px 8px 12px "}} >
+    <Card sx={{ borderRadius: 4 , boxShadow: "rgba(0,0,0,0.1) 0px 8px 12px "}} >
       <CardActionArea onClick={() => navigate(data.id.toString())}>
         <CardMedia
           component="img"
           height="280"
+          sx={{objectFit:"scale-down"}}
           image={data.image}
           alt={data.id}
         />
@@ -26,7 +26,7 @@ const CardMui = ({ data }) => {
           <Typography gutterBottom variant="h5" component="div">
             {shorten(data.title)}
           </Typography>
-          <Typography variant="p" component="h2" color="text.secondary">
+          <Typography variant="p" component="h2" color="#2baf46">
           {data.price} $
           </Typography>
           <div><Stack spacing={1}>

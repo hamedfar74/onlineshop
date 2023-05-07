@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getData } from "../redux/data/dataAction";
 import CardMui from "./CardMui";
-import styles from "../styles/Shop.module.css"
+// import styles from "../styles/Shop.module.css"
 import { Box, Container, Grid } from "@mui/material";
 import Loader from "./Loader";
 

@@ -1,9 +1,11 @@
 .container {
     display: flex;
     justify-content: center;
-    background-color: blueviolet;
-    min-height: 100vh;
+    /* background-color: blueviolet; */
+    height: 100vh;
     align-items: center;
+    margin-top: 60px;
+    /* position: absolute; */
 }
 .formContainer {
     border: 1px solid grey;
@@ -13,6 +15,8 @@
     border-radius: 10px;
     height: fit-content;
     background-color: #fff;
+
+
 }
 .header {
     text-align: left;

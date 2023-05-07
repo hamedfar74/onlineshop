@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { validate } from "../helper/validate";
 import styles from "../styles/Signup.module.css";
 import { Link } from "react-router-dom";
-
+import BackgroundTest from "./BackgroundTest";
 
 const Login = () => {
   const [data, setData] = useState({
@@ -22,27 +22,23 @@ const Login = () => {
   };
 
   const changeHandler = (event) => {
-    
-      setData({ ...data, [event.target.name]: event.target.value });
+    setData({ ...data, [event.target.name]: event.target.value });
   };
 
   const submitHandler = (event) => {
     event.preventDefault();
 
-      setTouched({
-        email: true,
-        password: true,
-      });
-    
+    setTouched({
+      email: true,
+      password: true,
+    });
   };
 
   return (
     <div className={styles.container}>
-
       <form onSubmit={submitHandler} className={styles.formContainer}>
-        
         <h2 className={styles.header}>Login</h2>
-        
+
         <div className={styles.formField}>
           <label>Email:</label>
           <input
