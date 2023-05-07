@@ -44,7 +44,7 @@ c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 24 150 28"
             preserveAspectRatio="none"
-            shape-rendering="auto"
+            shapeRendering="auto"
           >
             <defs>
               <path

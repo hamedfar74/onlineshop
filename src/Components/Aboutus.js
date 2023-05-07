@@ -18,7 +18,7 @@ const Aboutus = () => {
           this is an online-shop with login and signup validation form.
           and it's a SPA website. 
           all the shopping procces managed with redux.
-          I know thats not so great but let's see what technologies this project is build with
+          I know thats not so great but let's see what technologies this project is build with :
         </p> 
       </div>
       <div className={styles.html}>

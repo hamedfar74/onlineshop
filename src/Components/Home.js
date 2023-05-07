@@ -4,7 +4,6 @@ import banner from '../images/banner.png'
 import { Link } from 'react-router-dom'
 import Loader from './Loader'
 import Container from '@mui/material/Container'
-import BackgroundTest from './BackgroundTest'
 
 
 const Home = () => {
@@ -22,7 +21,7 @@ const Home = () => {
           </Link>
         </p>
       </div>
-      <BackgroundTest />
+      
       </Container>
       {/* <Button variant='contained' onClick={() => {} } >Shop</Button> */}
     </div>

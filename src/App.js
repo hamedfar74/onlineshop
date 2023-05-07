@@ -3,14 +3,13 @@ import Login from "./Components/Login";
 import Shop from "./Components/Shop";
 import Home from "./Components/Home";
 import Signup from "./Components/Signup";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Aboutus from "./Components/Aboutus";
 import Contactus from "./Components/Contactus";
 import ShopBasket from "./Components/ShopBasket";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Header/Navbar";
 import Profile from "./Components/Profile";
-import NavbarTest from "./Components/Header/NavbarTest";
 import ScrollToTop from "./Components/ScrollToTop";
 import Info from "./Components/Info";
 import BackgroundTest from "./Components/BackgroundTest";
@@ -21,9 +20,10 @@ function App() {
     <div  style={{}}>
       
       {/* <Navbar /> */}
-      <NavbarTest />
+      <Navbar />
       <ScrollToTop />
       <Routes>
+        
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/shop/:id" element={<Info />} />
@@ -41,7 +41,8 @@ function App() {
         </BackgroundTest>
         } />
         <Route path="/basket" element={<ShopBasket />} />
-        <Route path="/*" element={<Home />} />
+        <Route path="*" element={<Navigate to="/" />} />
+
       </Routes>
       <Footer />
       

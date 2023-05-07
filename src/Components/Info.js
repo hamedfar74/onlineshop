@@ -25,6 +25,7 @@ import AddIcon from "@mui/icons-material/Add";
 import DeleteIcon from "@mui/icons-material/Delete";
 import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
 import Loader from "./Loader";
+import styles from "../styles/Details.module.css"
 
 const Info = () => {
   const dispatch = useDispatch();
@@ -53,11 +54,11 @@ const Info = () => {
                   src={data.image}
                 />
               </Grid>
-              <Grid item xs={12} md={7} >
+              <Grid item xs={12} md={7} className={styles.info}>
                 <h3>{data.title}</h3>
-                <p>{data.description}</p>
-                <p>Category : {data.category}</p>
-                <p>Price : {data.price}$</p>
+                <p className={styles.info} >{data.description}</p>
+                <p className={styles.info} >Category : {data.category}</p>
+                <p className={styles.info} >Price : {data.price}$</p>
                 <Stack spacing={1}>
                   <Rating
                     name="half-rating-read"

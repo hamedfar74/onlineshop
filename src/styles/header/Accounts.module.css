@@ -1,12 +1,12 @@
 .container {
     right: 30px;
     display: flex;
-    padding: 10px;
+    padding: 13px;
     justify-content: flex-end;
 }
 .basket {
     margin: 0 8px;
-    background-color: #b9b9b9;
+    background-color: #5bccf6;
     height: 35px;
     width: 35px;
     /* justify-items: center;
@@ -19,12 +19,11 @@
     align-items: center;
     /* height: 35px; */
     width: 35px;
-    color: green;
 }
 .Accounts {
     margin: 0 8px;
 
-    background-color: #b9b9b9;
+    background-color: #5bccf6;
     height: 35px;
     width: 35px;
     /* justify-items: center;

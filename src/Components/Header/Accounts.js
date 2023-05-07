@@ -10,14 +10,16 @@ import styled from "styled-components";
 const DropDown = styled.ul`
     display: ${(props) => props.open ? "" : "none" } ;
     z-index: 10;
-    background-color: #b9b9b9;
+    background-color: #5bccf6;
     width: 100px;
     transition: all 0.4s linear;
     transform: ${(props) => props.open ? "translateY(0)" : "translateY(-200%)" } ;
+    transform: ${(props) => props.open ? "translateX(-45%)" : "translateX(0)" } ;
     border-radius:10px;
+    margin-right: 10px;
     a {
         text-decoration: none;
-        color: #511281;
+        color: white;
         
     }
     li {
