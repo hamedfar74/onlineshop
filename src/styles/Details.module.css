@@ -24,6 +24,8 @@
 .info {
     line-height: 2rem;
     font-family: 'Bruno Ace SC', cursive;
+    /* flex-wrap: wrap; */
+    word-wrap: break-word;
     /* font-family: 'Roboto Slab', sans-serif; */
 
     /* margin: 10px 30px; */
