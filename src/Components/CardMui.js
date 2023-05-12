@@ -21,6 +21,7 @@ const CardMui = ({ data }) => {
           sx={{objectFit:"scale-down"}}
           image={data.image}
           alt={data.id}
+          loading="lazy"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

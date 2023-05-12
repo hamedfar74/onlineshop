@@ -14,7 +14,7 @@ const Home = () => {
       <Container maxWidth="lg" sx={{padding:0}}>
         
       <div className={styles.banner}>
-        <img src={banner} alt='banner' />
+        <img src={banner} alt='banner' loading='lazy' />
         <p>Let's Go To 	&#x279C;
           <Link to="/shop" >
           <span> Shop</span>

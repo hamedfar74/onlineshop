@@ -5,7 +5,7 @@ import react from "../images/react.png"
 import redux from "../images/redux.png"
 import mui from "../images/MUI.png"
 import comp from "../images/styled-components.svg"
-import Loader from './Loader'
+// import Loader from './Loader'
 
 const Aboutus = () => {
   // if (loading) return <Loader />;
